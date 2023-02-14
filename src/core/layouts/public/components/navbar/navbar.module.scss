@@ -1,0 +1,33 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: rem(97);
+  width: 100%;
+  z-index: 0;
+  background-color: $hero-body;
+  nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999999;
+  }
+  &_list{
+    display: flex;
+    a{
+      &:not(:last-child){
+        margin-right: rem(16);
+      }
+      padding: rem(7);
+      color: $primary;
+      font-size: rem(18);
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+  }
+  &_btn{
+    z-index: 9999;
+  }
+}

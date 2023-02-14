@@ -1,0 +1,134 @@
+@import "../../assets/styles/abstracts/";
+.hero{
+    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+}
+.hero_container {
+    background-color: $hero-body;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 225px 0 255px;
+    overflow: hidden;
+    &_content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 9999999999;
+        &_mini_title {
+            span {
+                color: $secondary;
+                font-weight: 600;
+                font-size: rem(24);
+                line-height: rem(32);
+                z-index: 999999999;
+            }
+        }
+        &_title {
+            margin-bottom: rem(22);
+
+            h1 {
+                color: $primary;
+                font-size: rem(70);
+                font-weight: 700;
+                line-height: rem(92);
+            }
+        }
+        &_desc {
+            margin-bottom: rem(26);
+            p {
+                max-width: rem(650);
+                font-size: rem(24);
+                line-height: rem(34);
+                color: $txt-light;
+            }
+        }
+
+        &_btns {
+            display: flex;
+        }
+    }
+    &_right {
+        position: absolute;
+        right: rem(10);
+        bottom: 0;
+        width: rem(690);
+        height: rem(590);
+        z-index: 4;
+        img {
+            width: 100% !important;
+            height: 100% !important
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0%   { transform: rotate(0); }
+        50%  { transform: rotate(45deg); }
+        100% { transform: rotate(0); }
+    }
+
+    @keyframes spin2 {
+        0%   { transform: rotateY(0deg); }
+        50%  { transform: rotateY(35deg); }
+        100% { transform: rotate(0); }
+    }
+
+    &_shape {
+        z-index: 0;
+        &_banner {
+            position: absolute;
+            right: -34%;
+            top: -31%;
+            img {
+                animation: rotating 1.5s linear infinite;
+
+            }
+        }
+
+        &_hero_shape {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &_circle {
+            position: absolute;
+            left: -6%;
+            bottom: 0;
+            animation: rotating 20s linear infinite;
+        }
+
+        &_cube {
+            position: absolute;
+            left: 55%;
+            z-index: 1;
+            transform: translate(-50%);
+            top: 15%;
+            animation: spin 6s linear infinite;
+            animation-delay: 0.2s;
+        }
+        &_half_circle{
+            position: absolute;
+            left: 40%;
+            transform: translate(-50%);
+            bottom: 0;
+            z-index: 1;
+            animation: spin2 6s linear infinite;
+            animation-delay: 0.2s;
+        }
+    }
+}

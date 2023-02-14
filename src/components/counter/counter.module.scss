@@ -1,0 +1,33 @@
+@import "../../assets/styles/abstracts/";
+
+.counter {
+    position: relative;
+    top: rem(-100);
+    z-index: 9999;
+    &_card {
+        padding: 64px 70px;
+        border-radius: rem(20);
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            &_item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                span {
+                    color: $primary;
+                    font-size: rem(62);
+                    font-weight: 600;
+                }
+                p {
+                    font-size: rem(18);
+                    line-height: rem(30);
+                    margin-bottom: 0;
+                    color: $txt-light;
+                }
+            }
+        }
+    }
+
+}
