@@ -1,1 +1,11 @@
 @import "../../../assets/styles/abstracts/";
+.our_portfolio{
+    &_title{
+        display: block;
+    }
+    &_desc{
+        p{
+            text-align: start ;
+        }
+    }
+}

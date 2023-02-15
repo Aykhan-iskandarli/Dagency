@@ -5,6 +5,7 @@ import OurServicesComponent from 'components/home/our-services/our-services.comp
 import HeroComponent from "components/home/hero/hero.component"
 import AboutUsComponent from "components/home/about-us/about-us.component"
 import CounterComponent from "src/core/shared/counter/counter.component"
+import OurPortfolioComponent from "components/home/our-portfolio/our-portfolio.component"
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <CounterComponent/>
       <OurServicesComponent/>
       <AboutUsComponent/>
+      <OurPortfolioComponent/>
     </main>
   )
 }
