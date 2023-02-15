@@ -6,7 +6,12 @@
     display: flex;
     align-items: center;
     &_title{
-        align-items: start;
+        align-items: start !important;
+    }
+    &_desc{
+        p{
+            text-align: start ;
+        }
     }
     img{
         max-width: rem(1000);
@@ -18,7 +23,7 @@
     &_right_col{
         display: flex;
         align-items: center;
-  
+        
     }  
     &_btns{
         display: flex;

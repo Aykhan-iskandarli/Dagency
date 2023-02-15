@@ -17,7 +17,7 @@ const AboutUsComponent = () => {
                     </div>
                     <div className={`col-5 ${css.about_us_right_col}`}>
                       <div>
-                      <TitleComponent className={css.about_us_title} title={"About Us"} desc={"Nam semper, lectus ac vestibulum sollicitudin, enim ante elementum ligula, nec ornare nulla elit vel nunc. Fusce consequat varius blandit."} />
+                      <TitleComponent line={css.about_us_desc} className={css.about_us_title} title={"About Us"} desc={"Nam semper, lectus ac vestibulum sollicitudin, enim ante elementum ligula, nec ornare nulla elit vel nunc. Fusce consequat varius blandit."} />
                         <div className={css.about_us_btns}>
                             <ButtonComponent width={146} size={"xl"} className={"mr-15"}>About Us</ButtonComponent>
                             <ButtonComponent width={163} size={"xl"}  outline>Contact Us</ButtonComponent>

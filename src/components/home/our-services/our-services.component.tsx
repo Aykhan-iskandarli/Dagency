@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ButtonComponent from 'packages/RButton/button.component'
 import CardComponent from 'packages/RCard/card.component'
 import React from 'react'
+import { generateGuid } from 'src/core/layouts/public/helpers/common-functions/common-functions'
 import TitleComponent from 'src/core/shared/title/title.component'
 import { ourServices } from './index'
 import css from "./our-services.module.scss"
@@ -14,7 +15,7 @@ const OurServicesComponent = () => {
                 <div className="row">
                     {
                         ourServices.map((item: any) => (
-                            <div className={`col-3 pr-0 ${css.our_services_list}`}>
+                            <div key={generateGuid()} className={`col-3 pr-0 ${css.our_services_list}`}>
                                 <CardComponent className={`${css.our_services_list_card} `}>
                                     <div className={css.our_services_list_card_content}>
                                         <div className={css.our_services_list_card_content_img}>
