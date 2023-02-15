@@ -1,4 +1,4 @@
-import LogoComponent from "components/logo/logo.component";
+import LogoComponent from "src/core/shared/logo/logo.component";
 import Link from "next/link";
 import ButtonComponent from "packages/RButton/button.component";
 import { menu } from ".";
@@ -8,8 +8,6 @@ import css from "./navbar.module.scss"
 
 
 const NavbarComponent = () => {
-
-
   return (
     <div className={css.navbar}>
       <div className="container">

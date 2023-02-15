@@ -76,6 +76,13 @@
     border: 1px solid $border-color;
     background-color: transparent !important;
     color: $primary !important;
+    transition: all .3s ease;
+    font-weight: 500;
+    &:hover{
+      color: $white !important;
+      background-color: $primary-button-color !important;
+      border: 1px solid transparent !important;
+    }
   }
 
   &--outline-primary {
@@ -144,6 +151,6 @@
     font-size: rem(14);;
   }
   &--size-xl {
-    font-size: rem(16);;
+    font-size: rem(18);;
   }
 }

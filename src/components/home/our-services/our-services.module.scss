@@ -1,0 +1,58 @@
+@import "../../assets/styles/abstracts/";
+
+.our_services {
+    background-color: $white !important;
+    margin-bottom: rem(120);
+    width: 100%;
+    height: 100%;
+    &_btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: rem(55) auto 0;
+    }
+    &_list {
+        &_card {
+            border-radius: rem(10);
+            width: rem(306);
+            height: rem(396);
+            transition: all .6s ease;
+            &:hover{
+                box-shadow: 0px 5px 16px 0px rgb(0 0 0 / 25%);
+            }
+            &_content {
+                &_img {
+                    margin-bottom: rem(38);
+
+                    img {
+                        width: rem(140);
+                        height: rem(140);
+                        object-fit: contain;
+                    }
+                }
+
+                &_title {
+                    margin-bottom: rem(17);
+
+                    span {
+                        color: $primary;
+                        font-weight: 600;
+                        font-size: rem(24);
+                        line-height: rem(32);
+                    }
+                }
+
+                &_desc {
+                    margin-bottom: 0;
+
+                    span {
+                        font-size: rem(17);
+                        line-height: rem(30);
+                        color: $txt-light;
+                    }
+                }
+            }
+        }
+    }
+
+}

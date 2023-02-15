@@ -1,0 +1,25 @@
+@import "../../../assets/styles/abstracts/";
+.header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title{
+        h1{
+            font-weight: 700;
+            color: $primary;
+            font-size: rem(57);
+            line-height: rem(74.1);
+            margin: 0;
+        }
+    }
+    &_desc{
+        max-width: rem(720);
+        p{
+            font-size: rem(18);
+            margin-bottom: rem(35);
+            color: $txt-light;
+            text-align: center;
+            line-height: rem(30);
+        }
+    }
+}

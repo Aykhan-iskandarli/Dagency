@@ -26,3 +26,14 @@
     font-weight:bold;
     font-size:1.5rem;        
 }
+
+.container{
+    @include breakpoint("1200px", "min") {
+      max-width: 1320px !important;
+      .col-lg-4 {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+  

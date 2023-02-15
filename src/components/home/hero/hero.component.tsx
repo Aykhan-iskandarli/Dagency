@@ -29,7 +29,7 @@ const HeroComponent = () => {
                                 </div>
                                 <div className={css.hero_container_content_btns}>
                                     <ButtonComponent size={"xl"} className="mr-15">Contact Us</ButtonComponent>
-                                    <ButtonComponent size={"xl"} outline>Browse Portfolio</ButtonComponent>
+                                    <ButtonComponent size={"xl"} width={217} outline>Browse Portfolio</ButtonComponent>
                                 </div>
                             </div>
                         </div>

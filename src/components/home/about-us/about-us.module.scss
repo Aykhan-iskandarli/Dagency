@@ -1,0 +1,26 @@
+@import "../../../assets/styles/abstracts/";
+.about_us{
+    position: relative;
+    background-color: $about_us;
+    height: rem(840);
+    display: flex;
+    align-items: center;
+    &_title{
+        align-items: start;
+    }
+    img{
+        max-width: rem(1000);
+        margin-left: -40%;
+   
+        position: relative;
+        height: 100%;
+    } 
+    &_right_col{
+        display: flex;
+        align-items: center;
+  
+    }  
+    &_btns{
+        display: flex;
+    }
+}
