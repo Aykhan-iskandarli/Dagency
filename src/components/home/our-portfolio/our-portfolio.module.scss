@@ -1,11 +1,72 @@
 @import "../../../assets/styles/abstracts/";
 .our_portfolio{
+    padding-bottom: rem(120) ;
     &_title{
         display: block;
     }
     &_desc{
         p{
             text-align: start ;
+        }
+    }
+    &_list{
+        width:100%;
+        &_card{
+            border-radius: rem(20);
+            border: rem(1) solid $border-color-secondary;
+            height: rem(481);
+            transition: all 0.6s;
+            cursor: pointer;
+            position: relative;
+            bottom: 0;
+            &:hover{
+            bottom: -3%;
+           .our_portfolio_list_card_content_img{
+            transform: rotate(5deg);
+           }
+            }
+            &_content{
+                &_img{
+                    width: 100%;
+                    transition: all .6s ease;
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                &_title{
+                    margin-bottom: rem(21);
+                    padding: rem(20);
+                    span{
+                        color: $primary;
+                        font-weight: 600;
+                        font-size: rem(24);
+                        line-height: rem(32);
+                    }
+                }
+                &_link{
+                    padding-left: rem(20);
+                    height: 100%;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        font-size: rem(18);
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        color: $primary;
+                    }
+                    svg{
+                        width: rem(0);
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        svg{
+                            width:rem(35);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -5,8 +5,9 @@
   align-items: center;
   height: rem(97);
   width: 100%;
-  z-index: 0;
-  background-color: $hero-body;
+  z-index: 9;
+  position: fixed;
+  top: 0;
   nav{
     width: 100%;
     display: flex;
@@ -30,4 +31,12 @@
   &_btn{
     z-index: 9999;
   }
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  background: #fff;
+  transition: all .3s ease;
+  z-index: 999999999;
+  box-shadow: 0 0 20px rgb(0 0 0 / 8%);
 }

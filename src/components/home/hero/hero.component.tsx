@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ButtonComponent from 'packages/RButton/button.component'
-import React from 'react'
+import React, { useState } from 'react'
 import css from "./hero.module.scss"
 import vrImg from "src/assets/images/hero.png"
 import circle1 from "src/assets/images/circle1.png"

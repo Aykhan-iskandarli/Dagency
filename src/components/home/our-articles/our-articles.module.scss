@@ -1,1 +1,12 @@
 @import "../../../assets/styles/abstracts/";
+
+.our_articles{
+    &_title{
+        display: block;
+    }
+    &_desc{
+        p{
+            text-align: start !important;
+        }
+    }
+}
